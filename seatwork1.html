@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Working with Lists!</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- PyScript CSS -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <!-- This script tag bootstraps PyScript -->
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+</head>
+<style>
+    body {
+        background: url(everythinisblue.jpg) center center/cover no-repeat;
+    }
+
+    #box {
+        margin-right: 300px;
+        margin-left: 300px;
+        margin-top: 50px;
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        color: aliceblue;
+        display: block;
+        visibility: visible;
+        /* why is it still not showing up... */
+    }
+
+    h5 {
+        font-family: monospace;
+    }
+</style>
+
+<body>
+    <h1 style="text-align: center; font-family: monospace; margin-top: 30px; color: gainsboro;">DANCE CLUB CHECKER</h1>
+    <h5> Make sure what you input is capitalized!</h5>
+    <div id="#box">
+        <form>
+            <h5>First Name</h5>
+            <input type="text" id="first_name" placeholder="Enter your first name"><br>
+            <h5>Last Name</h5>
+            <input type="text" id="last_name" placeholder="Enter your last name"><br>
+            <input type="button" style="margin-top: 25px;" class="btn-btn primary" py-click="student_club"
+                value="Search">
+        </form>
+        <div style="font-family: monospace; font-size: medium;" id="checking"></div>
+        <script type="py" src="mainsw1.py"></script>
+    </div>
+
+</body>
+<footer>
+    <h5 style="font-family: monospace; background-color: azure; text-align: center;">Stephanie Toralde | 10-Topaz @ OBMC
+        GREENHILLS</h5>
+</footer>
+
+</html>
